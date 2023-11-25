@@ -1,0 +1,10 @@
+<div *ngIf="username">
+   <h1>You are logged as '{{username}}'</h1>
+   <div *ngFor="let userService of userServices" >
+      <img src="{{userService.image}}" alt="{{userService.name}}" style="height: 60px;">
+      <div>{{userService.name}}</div>
+   </div>
+   <h2>Projects ({{projects.length}})</h2>
+   <div *ngFor="let project of projects">project '{{project.name}}'</div>
+</div>
+
